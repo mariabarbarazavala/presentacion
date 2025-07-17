@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbara's Biolink</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+      position: relative;
+      padding-bottom: 40px;
+    }
+
+    .cover {
+      width: 100%;
+      height: 300px;
+      background-color: #000000;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 5px solid #000000;
+      background-color: #000;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+    }
+
+    .info {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 20px;
+      text-align: justify;
+    }
+
+    .title {
+      font-size: 22px;
+      color: #000000;
+      margin: -20px 0 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .subtitle-center {
+      font-size: 7px;
+      color: #000000;
+      margin: 5px 0 10px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .small-text {
+      font-size: 8px;
+      color: #000000;
+      max-width: 100%;
+      text-align: justify;
+      margin: 0;
+    }
+
+    .link-bio {
+      font-size: 12px;
+      color: #000000;
+      text-align: left;
+      padding-top: 0;
+      margin: 0;
+    }
+
+    .link-bio a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      .cover {
+        height: 220px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        top: 100%;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .subtitle-center {
+        font-size: 10px;
+      }
+
+      .small-text,
+      .link-bio {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cover">
+      <img
+        src="https://i.postimg.cc/Bvf9wSfq/1000134502.jpg"
+        alt="Foto de perfil"
+        class="profile-pic"
+      />
+    </div>
+
+    <div class="info">
+      <h1 class="title">María Barbara Zavala</h1>
+      <h2 class="subtitle-center">Mi blog personal</h2>
+      <h3 class="small-text">Licenciada en administración, gestión empresarial y liderazgo sistémico. Lectora. Piscis. Me gusta escribir. Maestra en artes ocultas. Filosofía, mentalidad, conocimiento. Mis blog's y mis colecciones:</h3>
+      <div class="small-text link-bio">
+        🔗 <a href="https://bio.site/xblacknoirfoliombz" target="_blank">bio.site/mariabarbarazav</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
