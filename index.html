@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Barbara's Biolink</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #ffffff;
       margin: 0;
@@ -20,9 +24,8 @@
       text-align: center;
       width: 100%;
       max-width: 900px;
-      position: relative;
       padding: 0 20px 40px;
-      box-sizing: border-box;
+      position: relative;
     }
 
     .cover {
@@ -48,37 +51,37 @@
     }
 
     .info {
-      margin-top: 100px;
+      margin-top: 90px; /* espacio justo debajo de la foto sin exceso */
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      line-height: 1; /* interlineado reducido */
     }
 
     .title {
-      font-size: 24px;
+      font-size: 22px;
       color: #000000;
       margin: 0;
     }
 
     .subtitle-center {
-      font-size: 18px;
+      font-size: 10px;
       color: #000000;
-      margin: 8px 0;
+      margin: 0;
     }
 
     .small-text {
       font-size: 12px;
       color: #000000;
-      margin: 8px 0;
-      max-width: 700px;
-      text-align: justify;
+      margin: 0;
+      max-width: 800px;
     }
 
     .link-bio {
-      font-size: 12px;
+      font-size: 13px;
       color: #000000;
-      margin-top: 8px;
+      margin: 4px 0 0;
     }
 
     .link-bio a {
@@ -88,18 +91,26 @@
     }
 
     @media (max-width: 768px) {
-      .container {
-        max-width: 100%;
-      }
       .profile-pic {
         width: 140px;
         height: 140px;
       }
-      .title {
-        font-size: 22px;
+
+      .info {
+        margin-top: 80px;
       }
+
+      .title {
+        font-size: 20px;
+      }
+
       .subtitle-center {
-        font-size: 17px;
+        font-size: 9px;
+      }
+
+      .small-text,
+      .link-bio {
+        font-size: 11px;
       }
     }
 
@@ -113,17 +124,21 @@
         height: 120px;
       }
 
+      .info {
+        margin-top: 70px;
+      }
+
       .title {
-        font-size: 20px;
+        font-size: 18px;
       }
 
       .subtitle-center {
-        font-size: 16px;
+        font-size: 8px;
       }
 
       .small-text,
       .link-bio {
-        font-size: 11px;
+        font-size: 10px;
       }
     }
   </style>
@@ -141,9 +156,9 @@
     <div class="info">
       <h1 class="title">María Barbara Zavala</h1>
       <h2 class="subtitle-center">Mi blog personal</h2>
-      <p class="small-text">
+      <h3 class="small-text">
         Licenciada en administración, gestión empresarial y liderazgo sistémico. Lectora. Piscis. Me gusta escribir. Maestra en artes ocultas. Filosofía, mentalidad, conocimiento. Mis blog's y mis colecciones:
-      </p>
+      </h3>
       <div class="link-bio">
         🔗 <a href="https://bio.site/xblacknoirfoliombz" target="_blank">bio.site/mariabarbarazav</a>
       </div>
