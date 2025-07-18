@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -19,12 +19,10 @@
     .container {
       text-align: center;
       width: 100%;
-      max-width: 900px; /* Ampliado */
+      max-width: 900px;
       position: relative;
-      padding-bottom: 40px;
+      padding: 0 20px 40px;
       box-sizing: border-box;
-      padding-left: 20px;
-      padding-right: 20px;
     }
 
     .cover {
@@ -53,39 +51,34 @@
       margin-top: 100px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      text-align: justify;
+      align-items: center;
+      text-align: center;
     }
 
     .title {
-      font-size: 22px;
+      font-size: 24px;
       color: #000000;
-      margin: -30px 0 0;
-      text-align: center;
-      width: 100%;
+      margin: 0;
     }
 
     .subtitle-center {
       font-size: 18px;
       color: #000000;
-      margin: -4px 0 8px;
-      text-align: center;
-      width: 100%;
+      margin: 8px 0;
     }
 
     .small-text {
-      font-size: 8px;
+      font-size: 12px;
       color: #000000;
+      margin: 8px 0;
+      max-width: 700px;
       text-align: justify;
-      margin: 0;
     }
 
     .link-bio {
       font-size: 12px;
       color: #000000;
-      text-align: left;
-      padding-top: 0;
-      margin: 0;
+      margin-top: 8px;
     }
 
     .link-bio a {
@@ -103,7 +96,10 @@
         height: 140px;
       }
       .title {
-        font-size: 20px;
+        font-size: 22px;
+      }
+      .subtitle-center {
+        font-size: 17px;
       }
     }
 
@@ -122,12 +118,12 @@
       }
 
       .subtitle-center {
-        font-size: 15px;
+        font-size: 16px;
       }
 
       .small-text,
       .link-bio {
-        font-size: 10px;
+        font-size: 11px;
       }
     }
   </style>
@@ -145,8 +141,10 @@
     <div class="info">
       <h1 class="title">María Barbara Zavala</h1>
       <h2 class="subtitle-center">Mi blog personal</h2>
-      <h3 class="small-text">Licenciada en administración, gestión empresarial y liderazgo sistémico. Lectora. Piscis. Me gusta escribir. Maestra en artes ocultas. Filosofía, mentalidad, conocimiento. Mis blog's y mis colecciones:</h3>
-      <div class="small-text link-bio">
+      <p class="small-text">
+        Licenciada en administración, gestión empresarial y liderazgo sistémico. Lectora. Piscis. Me gusta escribir. Maestra en artes ocultas. Filosofía, mentalidad, conocimiento. Mis blog's y mis colecciones:
+      </p>
+      <div class="link-bio">
         🔗 <a href="https://bio.site/xblacknoirfoliombz" target="_blank">bio.site/mariabarbarazav</a>
       </div>
     </div>
